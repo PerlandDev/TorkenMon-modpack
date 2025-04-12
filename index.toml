@@ -1,10 +1,6 @@
 hash-format = "sha256"
 
 [[files]]
-file = "README.md"
-hash = "d25b002b27f69f6b3ff8b7f238d67a37f9961959df622974d69bda4d03228fdf"
-
-[[files]]
 file = "datapacks/allthemons.pw.toml"
 hash = "c2ad14114b7da104807f86364b529aef23b98616ad4a1586c6d58b9fed2b5757"
 metafile = true
