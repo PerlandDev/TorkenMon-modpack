@@ -46,7 +46,7 @@ jobs:
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v1
         with:
-          tag_name: ${{ env.VERSION_TAG }}
+          tag_name: v${{ env.VERSION_TAG }}
           name: Torkenmon-${{ env.VERSION_TAG }}
           files: torkenmon-server.mrpack
         env:
