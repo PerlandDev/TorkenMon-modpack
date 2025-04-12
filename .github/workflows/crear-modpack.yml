@@ -38,7 +38,7 @@ jobs:
         run: echo "$HOME/go/bin" >> $GITHUB_PATH
 
       - name: Export .mrpack file
-        run: packwiz modrinth export
+        run: packwiz modrinth export --output torkenmon-server.mrpack
 
       - name: Generate release tag from timestamp
         run: echo "VERSION_TAG=v$(date +%Y%m%d%H%M%S)" >> $GITHUB_ENV
@@ -48,6 +48,6 @@ jobs:
         with:
           tag_name: ${{ env.VERSION_TAG }}
           name: Modpack Build - ${{ env.VERSION_TAG }}
-          files: my-modpack.mrpack
+          files: torkenmon-server.mrpack
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
