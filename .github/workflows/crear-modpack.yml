@@ -1,7 +1,8 @@
 # This is a basic workflow to help you get started with Actions
 
 name: Crear Torkenmon Server Modpack
-
+permissions:
+  contents: write
 # Controls when the workflow will run
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
@@ -46,7 +47,7 @@ jobs:
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v1
         with:
-          tag_name: v${{ env.VERSION_TAG }}
+          tag_name: ${{ env.VERSION_TAG }}
           name: Torkenmon-${{ env.VERSION_TAG }}
           files: torkenmon-server.mrpack
         env:
