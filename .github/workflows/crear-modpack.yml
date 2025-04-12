@@ -1,11 +1,16 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Torkenmon-prod
+name: Crear Torkenmon Server Modpack
+permissions:
+  contents: write
 # Controls when the workflow will run
 on:
+  # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
-    tags:
-      - "v*"
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -36,30 +41,14 @@ jobs:
       - name: Export .mrpack file
         run: packwiz modrinth export --output torkenmon-server.mrpack
 
-      # Define the version from the tag
-      - name: Set version tag
-        id: version
-        run: |
-          VERSION=${GITHUB_REF#refs/tags/}
-          echo "VERSION=$VERSION" >> $GITHUB_ENV
+      - name: Generate release tag from timestamp
+        run: echo "VERSION_TAG=v$(date +%Y%m%d%H%M)" >> $GITHUB_ENV
 
- # Build the base image using itzg/minecraft-server
-      - name: Build custom Minecraft server image
-        run: |
-          # Pull the base Minecraft server image
-          docker pull itzg/minecraft-server:latest
-
-          # Create a container from the base image
-          docker create --name temp-container itzg/minecraft-server:latest
-
-          # Copy the .mrpack file into the container (assume it was generated in the previous step)
-          docker cp torkenmon-server.mrpack temp-container:/mods/torkenmon-server.mrpack
-
-          # Commit the changes to create a new custom image
-          docker commit temp-container estoesmoises/torkencraft:torkenmon-${{ env.VERSION }}
-
-          # Push the new image to Docker Hub
-          docker push estoesmoises/torkencraft:torkenmon-${{ env.VERSION }}
-
-          # Remove the temporary container
-          docker rm temp-container
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: ${{ env.VERSION_TAG }}
+          name: Torkenmon-${{ env.VERSION_TAG }}
+          files: torkenmon-server.mrpack
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
