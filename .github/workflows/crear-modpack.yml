@@ -42,13 +42,13 @@ jobs:
         run: packwiz modrinth export --output torkenmon-server.mrpack
 
       - name: Generate release tag from timestamp
-        run: echo "VERSION_TAG=torkenmon-modpack-static" >> $GITHUB_ENV
+        run: echo "VERSION_TAG=server-modpack" >> $GITHUB_ENV
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v1
         with:
           tag_name: ${{ env.VERSION_TAG }}
-          name: Torkenmon-${{ env.VERSION_TAG }}
+          name: ${{ env.VERSION_TAG }}
           files: torkenmon-server.mrpack
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
