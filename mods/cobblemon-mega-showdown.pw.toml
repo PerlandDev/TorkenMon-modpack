@@ -1,0 +1,13 @@
+name = "Cobblemon: Mega Showdown"
+filename = "Cobblemon_MegaShowdown-8.2.4-beta-d-fabric.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/SszvX85I/versions/PqcUnWRS/Cobblemon_MegaShowdown-8.2.4-beta-d-fabric.jar"
+hash-format = "sha512"
+hash = "13c0d380d89a165078aa3faffe46f1078f19fc205a55772e828eda18f2668633b0a42fb1e57f0b4eccdb11f9c8bfa7595e8f3fa6994ac6e971467539f05b3fea"
+
+[update]
+[update.modrinth]
+mod-id = "SszvX85I"
+version = "PqcUnWRS"

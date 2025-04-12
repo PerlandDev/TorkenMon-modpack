@@ -1,0 +1,13 @@
+name = "Cobblemon Texto Corregido Español"
+filename = "Cobblemon Texto Corregido_es v2.0.zip"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/uiPzum24/versions/6aq59O4d/Cobblemon%20Texto%20Corregido_es%20v2.0.zip"
+hash-format = "sha512"
+hash = "92fbf7d065036f0c73754c0c26b32d0d476ed74c92a42e6c6b4bfa6a23a421fa21b051859ec98334b7193ac3e5773f7413e7ebe414f854d5f384bc62d1405f6e"
+
+[update]
+[update.modrinth]
+mod-id = "uiPzum24"
+version = "6aq59O4d"

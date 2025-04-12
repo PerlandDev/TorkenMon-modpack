@@ -1,0 +1,13 @@
+name = "Cobblemon : Remixed Shinies"
+filename = "Remixed Cobble Shinies.zip"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/9ZYOKyXL/versions/2xoofA45/Remixed%20Cobble%20Shinies.zip"
+hash-format = "sha512"
+hash = "ea3c47b493f55e2a41573c31c12bd359d663608a25c69e7e0a6de9a2c8209fa72e37fd473fd468c18480856af639728e521895e571f946405eea7294968341b2"
+
+[update]
+[update.modrinth]
+mod-id = "9ZYOKyXL"
+version = "2xoofA45"
