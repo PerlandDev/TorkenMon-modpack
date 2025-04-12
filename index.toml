@@ -41,6 +41,11 @@ hash = "18f45db393d99493c00150c2d4a74d927fc1eccb575629ef1a1fa72ef950b7ff"
 metafile = true
 
 [[files]]
+file = "mods/cobblemonrider1.5.pw.toml"
+hash = "cc6ac07279932f8b3ed46b78ab075acd42fd20438783503f8e53e9d71e29a9bb"
+metafile = true
+
+[[files]]
 file = "mods/crafting-tweaks.pw.toml"
 hash = "969995aa56ca4ab4c5dedb7c64a100b9c53f632bccf947b48d5ee6683bdb41da"
 metafile = true
