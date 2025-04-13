@@ -1,0 +1,13 @@
+name = "OdysseyMons"
+filename = "OdysseyMons_1.0.1.zip"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/VKjO2iCN/versions/D2jzYcxk/OdysseyMons_1.0.1.zip"
+hash-format = "sha512"
+hash = "a56ba8bfbf009e069ee034f24c08578db77bc2953c5643b281243ada6f3e25218db1fe1d01ca32607243298a2d5ab4fe300f00324c639d9c299d908319f15419"
+
+[update]
+[update.modrinth]
+mod-id = "VKjO2iCN"
+version = "D2jzYcxk"

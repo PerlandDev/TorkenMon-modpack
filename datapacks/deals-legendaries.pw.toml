@@ -1,0 +1,13 @@
+name = "DEAL's Legendaries"
+filename = "DEAL'sLegendaries-v.1.4.zip"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/e2oZPmbJ/versions/x8bvD1zb/DEAL%27sLegendaries-v.1.4.zip"
+hash-format = "sha512"
+hash = "7da1c933a150926d78b19e9152bad97dedb340eaa6735161d4d658cf9cdbd076f2ee462b4d95de17f85130a8c576320f4c54ebe49b5508227a17fb4fa5832aa9"
+
+[update]
+[update.modrinth]
+mod-id = "e2oZPmbJ"
+version = "x8bvD1zb"

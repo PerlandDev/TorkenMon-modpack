@@ -1,0 +1,13 @@
+name = "MoreMons [Cobblemon]"
+filename = "MoreMons - v0.5.4 [Thank you Prof. Eclipse!].zip"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/79zyF4nY/versions/H2LZoIa4/MoreMons%20-%20v0.5.4%20%5BThank%20you%20Prof.%20Eclipse%21%5D.zip"
+hash-format = "sha512"
+hash = "390d07784fd460a8d8a33082576f236f16f5543f743479396d39748f754cf3f6713f1e58f95bfd0042b9d8fc469e4576d85f53445442041f1573fd2096693e8b"
+
+[update]
+[update.modrinth]
+mod-id = "79zyF4nY"
+version = "H2LZoIa4"

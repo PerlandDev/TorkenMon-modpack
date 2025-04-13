@@ -6,13 +6,88 @@ hash = "c2ad14114b7da104807f86364b529aef23b98616ad4a1586c6d58b9fed2b5757"
 metafile = true
 
 [[files]]
+file = "datapacks/alphabetsoup.pw.toml"
+hash = "cf1f65bffbc49fd7cb008bf1f98347e7cd9f535fe77ccfef78311a8851c2765f"
+metafile = true
+
+[[files]]
+file = "datapacks/cloudmons.pw.toml"
+hash = "40170d00156692b732bd9b1bcf785080f4b0e0e5ac0e1fa63c1f6ecb6e8c850e"
+metafile = true
+
+[[files]]
+file = "datapacks/cobble-cats.pw.toml"
+hash = "4f75533a455aa86f60b8e283c5c9a91b033c17de4159152bb39b51eaa88cdc45"
+metafile = true
+
+[[files]]
 file = "datapacks/cobblemon-alphas.pw.toml"
 hash = "32967bd90daf3871d858813068f07e3446ac8c361097fa515c62c08e4749e426"
 metafile = true
 
 [[files]]
+file = "datapacks/cobblemon-pokemans.pw.toml"
+hash = "50771b4de15de0497d37f179454ee7db90c269bcdff26d9294cda977f6cf2a90"
+metafile = true
+
+[[files]]
+file = "datapacks/deals-legendaries.pw.toml"
+hash = "b385aa0d776ec77f9ad2d53dcc9d82f066162d426bbe50acfc68062d048646cc"
+metafile = true
+
+[[files]]
+file = "datapacks/genomons.pw.toml"
+hash = "dcc97a844be8a8cc5406d5d049c0716cfaf7a631b0517020cadd9e5386205fad"
+metafile = true
+
+[[files]]
+file = "datapacks/hydro-reanimodel-pack.pw.toml"
+hash = "11e838d5e5a01aa45078d76b0f3ef796809a5b5e72a36b40a15b288ca3d9fc82"
+metafile = true
+
+[[files]]
+file = "datapacks/kales-cobblemon-collection.pw.toml"
+hash = "837d691d0d1b6af22603e62780d921b63cec018f33b7d48cacd251012685501e"
+metafile = true
+
+[[files]]
+file = "datapacks/missingmons-cobblemon.pw.toml"
+hash = "4cc635cc18c1c6242fc29a494a0ef6f306509e9cff988607d7dfe95d0f9e4d92"
+metafile = true
+
+[[files]]
+file = "datapacks/notsocobblemon-allones-additions.pw.toml"
+hash = "1c81663743ccd5c428098320f56b8a6b065013b4cc6651a58a3c8222d520677c"
+metafile = true
+
+[[files]]
+file = "datapacks/pigeons-poke-pack.pw.toml"
+hash = "03c4085c8644d6578c7f809753f1180e47ecd7a1742667cbd1eb132ad2a48969"
+metafile = true
+
+[[files]]
+file = "datapacks/saltmons.pw.toml"
+hash = "aee8bda9a63a8d79d93f71b006efa3fefd3654b537fc81949be11c63fcd94386"
+metafile = true
+
+[[files]]
+file = "datapacks/the-jewel-pokmon-cobblemon.pw.toml"
+hash = "b099399639142fe13beefde0127e29508d9254affe6d077638a1ae482e20f5b6"
+metafile = true
+
+[[files]]
+file = "datapacks/wavimons-(cobblemon).pw.toml"
+hash = "d8850a7d004bf723f026b3067aee1723e93afaff76b009f765efda8c88fe249a"
+metafile = true
+
+[[files]]
 file = "mods/appleskin.pw.toml"
 hash = "17fc9c6cab5ae0ea6973440f143ad6ffa4e5d373749c80077b631dbbe4df3f3b"
+metafile = true
+
+[[files]]
+file = "mods/architectury-api.pw.toml"
+hash = "1102440dd2533ba3a154419bb95ff1f81b858201eb0c44d2a2eea486c74e565a"
 metafile = true
 
 [[files]]
@@ -71,8 +146,18 @@ hash = "fe84e2227c405bf9b735f01f307a01768784b9d49df82a13ecda3d3b6d198507"
 metafile = true
 
 [[files]]
+file = "mods/cobblemon-fixedstarterivs.pw.toml"
+hash = "78c466aafcd16c642792af85d430717c7dcaed3df753838478c3534ba2cd5ed7"
+metafile = true
+
+[[files]]
 file = "mods/cobblemon-mega-showdown.pw.toml"
 hash = "2463c81d2f9c1682f2fb307effcd40b8cc6c257a10bc14a1306787ad48f52371"
+metafile = true
+
+[[files]]
+file = "mods/cobblemon-size-variations.pw.toml"
+hash = "d7861a73cbda588eb3b2dd823e6a9ec37ae87342e94af37292e4eb3e859f38cd"
 metafile = true
 
 [[files]]
@@ -153,6 +238,11 @@ metafile = true
 [[files]]
 file = "mods/forge-config-api-port.pw.toml"
 hash = "f9d89c62265e675839395d925f4162e3e93fda837ed50fbe3832f4ae9c58bebb"
+metafile = true
+
+[[files]]
+file = "mods/hiddenmons-cobblemon.pw.toml"
+hash = "d2e4214bbe6f93f7f95f688989ee296b419b7dba10dee858abb346ae73b4cfbe"
 metafile = true
 
 [[files]]
@@ -421,8 +511,18 @@ hash = "b873c8a68853191e6e5534e444be2411e14521aec0f2e33779d30fd3fcc1ca77"
 metafile = true
 
 [[files]]
+file = "resourcepacks/moremons.pw.toml"
+hash = "8807200201705e90a82ed3b810e56e508d86eda829ffc46865e510a355fc401c"
+metafile = true
+
+[[files]]
 file = "resourcepacks/move,-samurott!.pw.toml"
 hash = "b4a4d2be87ccc794e0ca56c82f4a4634ef7904c5430ec84fd58d6fd2638eea6d"
+metafile = true
+
+[[files]]
+file = "resourcepacks/odysseymons.pw.toml"
+hash = "a66e89842c97fab2ce5980665f81bd27e49abff6ea4fbb95d8e5be1b8d2cab5b"
 metafile = true
 
 [[files]]

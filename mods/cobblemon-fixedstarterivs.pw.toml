@@ -1,0 +1,13 @@
+name = "Cobblemon Fixed Starter IVs"
+filename = "cobblemon-fixedstarterivs-1.6-fabric-1.0.0.jar"
+side = "server"
+
+[download]
+url = "https://cdn.modrinth.com/data/dwxBClup/versions/WQEhxo44/cobblemon-fixedstarterivs-1.6-fabric-1.0.0.jar"
+hash-format = "sha512"
+hash = "04d58f03f7db03a5dddd79b6cd1c5f4850005d9f409feb30be587bb2ce42bc693c348a7fadbf7889778f187f9f28bef96b5d911222c2461d20252f2a2cfb0c93"
+
+[update]
+[update.modrinth]
+mod-id = "dwxBClup"
+version = "WQEhxo44"

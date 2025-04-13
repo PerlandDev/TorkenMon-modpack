@@ -1,0 +1,13 @@
+name = "Kale's Collection [Cobblemon]"
+filename = "Kale's Collection [v1.8.2].zip"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/UOd0UVtj/versions/WgXdM1uZ/Kale%27s%20Collection%20%5Bv1.8.2%5D.zip"
+hash-format = "sha512"
+hash = "59487bcef4c94e7233238efc4d98649e4fd15db48112db18be4b1c851e75f43dd9d8714e0a7cbb62b5b3e7ce3eee6ae598e8d232ec6814e844047f1d61f225f6"
+
+[update]
+[update.modrinth]
+mod-id = "UOd0UVtj"
+version = "WgXdM1uZ"

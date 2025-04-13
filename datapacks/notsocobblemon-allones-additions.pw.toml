@@ -1,0 +1,13 @@
+name = "NotSoCobblemon Allone's Additions"
+filename = "NotSoCobblemon.zip"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/M6MEys1f/versions/So3shf0J/NotSoCobblemon.zip"
+hash-format = "sha512"
+hash = "aacb0687b0472b3db57f513360a0834ad8ebccea812bba012744dc0e89cef5094de57eff403ae6810e3c8de781843e9f3ce67bb1d475058d27affcf086696d71"
+
+[update]
+[update.modrinth]
+mod-id = "M6MEys1f"
+version = "So3shf0J"

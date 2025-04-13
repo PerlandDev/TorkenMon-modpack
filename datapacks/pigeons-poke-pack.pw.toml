@@ -1,0 +1,13 @@
+name = "Pigeon's Poke Pack [1.7.0] - Fang and Claw"
+filename = "PigeonPack.zip"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/EhFoAML2/versions/FRaZvaRV/PigeonPack.zip"
+hash-format = "sha512"
+hash = "2af99713bdcfb506b75ab1c50b312d3a57952582a07efbae3c66cec3f500a101ae5e26a2ac45e4b490cfec71b261c1ab12731ec8404f08c7e8aafbfe27e6a095"
+
+[update]
+[update.modrinth]
+mod-id = "EhFoAML2"
+version = "FRaZvaRV"

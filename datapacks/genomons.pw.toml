@@ -1,0 +1,13 @@
+name = "GenoMons [Cobblemon]"
+filename = "Genomons 1.6 [Beta V3].zip"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/yJZFl0Ux/versions/yhpzLnJU/Genomons%201.6%20%5BBeta%20V3%5D.zip"
+hash-format = "sha512"
+hash = "41454b55519874926e9c9d59456cb88304baba00856c1510cf6ac8247690b02c1b192fbb953fd583538a1f904bf94854862ac47b624c7b48ed42421961e116f9"
+
+[update]
+[update.modrinth]
+mod-id = "yJZFl0Ux"
+version = "yhpzLnJU"
