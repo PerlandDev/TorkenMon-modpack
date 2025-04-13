@@ -6,3 +6,4 @@ Dockerfile
 .gitattributes
 .mrpack
 .html
+.zip
