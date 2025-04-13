@@ -49,6 +49,6 @@ jobs:
         with:
           tag_name: ${{ env.VERSION_TAG }}
           name: ${{ env.VERSION_TAG }}
-          files: torkemon-latest.mrpack
+          files: torkenmon-latest.mrpack
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
