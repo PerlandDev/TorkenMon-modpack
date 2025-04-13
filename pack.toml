@@ -14,4 +14,4 @@ minecraft = "1.21.1"
 
 [options]
 acceptable-game-versions = ["1.20.1"]
-datapack-folder = "./datapacks"
+datapack-folder = "resources/datapacks"
