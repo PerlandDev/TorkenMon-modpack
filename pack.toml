@@ -1,4 +1,4 @@
-name = "Torkenmon Official Pack"
+name = "TorkenMon Pack Oficial 1.0.0-alpha"
 author = "PerlandDev"
 version = "1.0.0-alpha"
 pack-format = "packwiz:1.1.0"
@@ -6,7 +6,7 @@ pack-format = "packwiz:1.1.0"
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "572b1653c26f33c7e3acbe0606e2920a59381fdd694b3aa19a1cef2ae2ef17e6"
+hash = "4261308fd8f673f805fb8fd3f650b35602a1f76c88a14e854c43719dd7b2c3f6"
 
 [versions]
 fabric = "0.16.13"

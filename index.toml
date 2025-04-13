@@ -56,6 +56,10 @@ hash = "03c4085c8644d6578c7f809753f1180e47ecd7a1742667cbd1eb132ad2a48969"
 metafile = true
 
 [[files]]
+file = "index.html"
+hash = "b2aa6e31d74f5bc22faeb2284996cd99fa8600c7eb08cc71125b5d0ec83c1f70"
+
+[[files]]
 file = "mods/appleskin.pw.toml"
 hash = "17fc9c6cab5ae0ea6973440f143ad6ffa4e5d373749c80077b631dbbe4df3f3b"
 metafile = true
