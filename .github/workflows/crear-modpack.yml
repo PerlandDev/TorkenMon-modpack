@@ -39,16 +39,16 @@ jobs:
         run: echo "$HOME/go/bin" >> $GITHUB_PATH
 
       - name: Export .mrpack file
-        run: packwiz modrinth export --output torkenmon-server.mrpack
+        run: packwiz modrinth export --output torkenmon-latest.mrpack
 
-      - name: Generate release tag from timestamp
-        run: echo "VERSION_TAG=server-modpack" >> $GITHUB_ENV
+      - name: Release tag is torkenmon-latest
+        run: echo "VERSION_TAG=latest-modpack" >> $GITHUB_ENV
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v1
         with:
           tag_name: ${{ env.VERSION_TAG }}
           name: ${{ env.VERSION_TAG }}
-          files: torkenmon-server.mrpack
+          files: torkemon-latest.mrpack
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
