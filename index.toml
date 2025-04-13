@@ -1,86 +1,6 @@
 hash-format = "sha256"
 
 [[files]]
-file = "datapacks/allthemons.pw.toml"
-hash = "c2ad14114b7da104807f86364b529aef23b98616ad4a1586c6d58b9fed2b5757"
-metafile = true
-
-[[files]]
-file = "datapacks/alphabetsoup.pw.toml"
-hash = "cf1f65bffbc49fd7cb008bf1f98347e7cd9f535fe77ccfef78311a8851c2765f"
-metafile = true
-
-[[files]]
-file = "datapacks/cloudmons.pw.toml"
-hash = "40170d00156692b732bd9b1bcf785080f4b0e0e5ac0e1fa63c1f6ecb6e8c850e"
-metafile = true
-
-[[files]]
-file = "datapacks/cobble-cats.pw.toml"
-hash = "4f75533a455aa86f60b8e283c5c9a91b033c17de4159152bb39b51eaa88cdc45"
-metafile = true
-
-[[files]]
-file = "datapacks/cobblemon-alphas.pw.toml"
-hash = "32967bd90daf3871d858813068f07e3446ac8c361097fa515c62c08e4749e426"
-metafile = true
-
-[[files]]
-file = "datapacks/cobblemon-pokemans.pw.toml"
-hash = "50771b4de15de0497d37f179454ee7db90c269bcdff26d9294cda977f6cf2a90"
-metafile = true
-
-[[files]]
-file = "datapacks/deals-legendaries.pw.toml"
-hash = "b385aa0d776ec77f9ad2d53dcc9d82f066162d426bbe50acfc68062d048646cc"
-metafile = true
-
-[[files]]
-file = "datapacks/genomons.pw.toml"
-hash = "dcc97a844be8a8cc5406d5d049c0716cfaf7a631b0517020cadd9e5386205fad"
-metafile = true
-
-[[files]]
-file = "datapacks/hydro-reanimodel-pack.pw.toml"
-hash = "11e838d5e5a01aa45078d76b0f3ef796809a5b5e72a36b40a15b288ca3d9fc82"
-metafile = true
-
-[[files]]
-file = "datapacks/kales-cobblemon-collection.pw.toml"
-hash = "837d691d0d1b6af22603e62780d921b63cec018f33b7d48cacd251012685501e"
-metafile = true
-
-[[files]]
-file = "datapacks/missingmons-cobblemon.pw.toml"
-hash = "4cc635cc18c1c6242fc29a494a0ef6f306509e9cff988607d7dfe95d0f9e4d92"
-metafile = true
-
-[[files]]
-file = "datapacks/notsocobblemon-allones-additions.pw.toml"
-hash = "1c81663743ccd5c428098320f56b8a6b065013b4cc6651a58a3c8222d520677c"
-metafile = true
-
-[[files]]
-file = "datapacks/pigeons-poke-pack.pw.toml"
-hash = "03c4085c8644d6578c7f809753f1180e47ecd7a1742667cbd1eb132ad2a48969"
-metafile = true
-
-[[files]]
-file = "datapacks/saltmons.pw.toml"
-hash = "aee8bda9a63a8d79d93f71b006efa3fefd3654b537fc81949be11c63fcd94386"
-metafile = true
-
-[[files]]
-file = "datapacks/the-jewel-pokmon-cobblemon.pw.toml"
-hash = "b099399639142fe13beefde0127e29508d9254affe6d077638a1ae482e20f5b6"
-metafile = true
-
-[[files]]
-file = "datapacks/wavimons-(cobblemon).pw.toml"
-hash = "d8850a7d004bf723f026b3067aee1723e93afaff76b009f765efda8c88fe249a"
-metafile = true
-
-[[files]]
 file = "mods/appleskin.pw.toml"
 hash = "17fc9c6cab5ae0ea6973440f143ad6ffa4e5d373749c80077b631dbbe4df3f3b"
 metafile = true
@@ -528,6 +448,86 @@ metafile = true
 [[files]]
 file = "resourcepacks/remixed-cobble-shinies.pw.toml"
 hash = "12fc0b019983f4e861dde33fdcc852ad9a414df0ee95b4dc91b29bd13d6a801d"
+metafile = true
+
+[[files]]
+file = "resources/datapacks/allthemons.pw.toml"
+hash = "c2ad14114b7da104807f86364b529aef23b98616ad4a1586c6d58b9fed2b5757"
+metafile = true
+
+[[files]]
+file = "resources/datapacks/alphabetsoup.pw.toml"
+hash = "cf1f65bffbc49fd7cb008bf1f98347e7cd9f535fe77ccfef78311a8851c2765f"
+metafile = true
+
+[[files]]
+file = "resources/datapacks/cloudmons.pw.toml"
+hash = "40170d00156692b732bd9b1bcf785080f4b0e0e5ac0e1fa63c1f6ecb6e8c850e"
+metafile = true
+
+[[files]]
+file = "resources/datapacks/cobble-cats.pw.toml"
+hash = "4f75533a455aa86f60b8e283c5c9a91b033c17de4159152bb39b51eaa88cdc45"
+metafile = true
+
+[[files]]
+file = "resources/datapacks/cobblemon-alphas.pw.toml"
+hash = "32967bd90daf3871d858813068f07e3446ac8c361097fa515c62c08e4749e426"
+metafile = true
+
+[[files]]
+file = "resources/datapacks/cobblemon-pokemans.pw.toml"
+hash = "50771b4de15de0497d37f179454ee7db90c269bcdff26d9294cda977f6cf2a90"
+metafile = true
+
+[[files]]
+file = "resources/datapacks/deals-legendaries.pw.toml"
+hash = "b385aa0d776ec77f9ad2d53dcc9d82f066162d426bbe50acfc68062d048646cc"
+metafile = true
+
+[[files]]
+file = "resources/datapacks/genomons.pw.toml"
+hash = "dcc97a844be8a8cc5406d5d049c0716cfaf7a631b0517020cadd9e5386205fad"
+metafile = true
+
+[[files]]
+file = "resources/datapacks/hydro-reanimodel-pack.pw.toml"
+hash = "11e838d5e5a01aa45078d76b0f3ef796809a5b5e72a36b40a15b288ca3d9fc82"
+metafile = true
+
+[[files]]
+file = "resources/datapacks/kales-cobblemon-collection.pw.toml"
+hash = "837d691d0d1b6af22603e62780d921b63cec018f33b7d48cacd251012685501e"
+metafile = true
+
+[[files]]
+file = "resources/datapacks/missingmons-cobblemon.pw.toml"
+hash = "4cc635cc18c1c6242fc29a494a0ef6f306509e9cff988607d7dfe95d0f9e4d92"
+metafile = true
+
+[[files]]
+file = "resources/datapacks/notsocobblemon-allones-additions.pw.toml"
+hash = "1c81663743ccd5c428098320f56b8a6b065013b4cc6651a58a3c8222d520677c"
+metafile = true
+
+[[files]]
+file = "resources/datapacks/pigeons-poke-pack.pw.toml"
+hash = "03c4085c8644d6578c7f809753f1180e47ecd7a1742667cbd1eb132ad2a48969"
+metafile = true
+
+[[files]]
+file = "resources/datapacks/saltmons.pw.toml"
+hash = "aee8bda9a63a8d79d93f71b006efa3fefd3654b537fc81949be11c63fcd94386"
+metafile = true
+
+[[files]]
+file = "resources/datapacks/the-jewel-pokmon-cobblemon.pw.toml"
+hash = "b099399639142fe13beefde0127e29508d9254affe6d077638a1ae482e20f5b6"
+metafile = true
+
+[[files]]
+file = "resources/datapacks/wavimons-(cobblemon).pw.toml"
+hash = "d8850a7d004bf723f026b3067aee1723e93afaff76b009f765efda8c88fe249a"
 metafile = true
 
 [[files]]
