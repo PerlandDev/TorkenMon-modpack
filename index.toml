@@ -1,18 +1,8 @@
 hash-format = "sha256"
 
 [[files]]
-file = "datapacks/allthemons.pw.toml"
-hash = "c2ad14114b7da104807f86364b529aef23b98616ad4a1586c6d58b9fed2b5757"
-metafile = true
-
-[[files]]
 file = "datapacks/alphabetsoup.pw.toml"
 hash = "cf1f65bffbc49fd7cb008bf1f98347e7cd9f535fe77ccfef78311a8851c2765f"
-metafile = true
-
-[[files]]
-file = "datapacks/cloudmons.pw.toml"
-hash = "40170d00156692b732bd9b1bcf785080f4b0e0e5ac0e1fa63c1f6ecb6e8c850e"
 metafile = true
 
 [[files]]
@@ -66,21 +56,6 @@ hash = "03c4085c8644d6578c7f809753f1180e47ecd7a1742667cbd1eb132ad2a48969"
 metafile = true
 
 [[files]]
-file = "datapacks/saltmons.pw.toml"
-hash = "aee8bda9a63a8d79d93f71b006efa3fefd3654b537fc81949be11c63fcd94386"
-metafile = true
-
-[[files]]
-file = "datapacks/the-jewel-pokmon-cobblemon.pw.toml"
-hash = "b099399639142fe13beefde0127e29508d9254affe6d077638a1ae482e20f5b6"
-metafile = true
-
-[[files]]
-file = "datapacks/wavimons-(cobblemon).pw.toml"
-hash = "d8850a7d004bf723f026b3067aee1723e93afaff76b009f765efda8c88fe249a"
-metafile = true
-
-[[files]]
 file = "mods/appleskin.pw.toml"
 hash = "17fc9c6cab5ae0ea6973440f143ad6ffa4e5d373749c80077b631dbbe4df3f3b"
 metafile = true
@@ -117,7 +92,7 @@ metafile = true
 
 [[files]]
 file = "mods/bookshelf-lib.pw.toml"
-hash = "adad9d60c3ca810f316d83c42220ad19542c2115b3db9742ac94d83c7a7e7c23"
+hash = "50bff344eae689a23afbb1f45321e4029039f3bd0a50cead863c302269b83cd9"
 metafile = true
 
 [[files]]
@@ -152,7 +127,7 @@ metafile = true
 
 [[files]]
 file = "mods/cobblemon-mega-showdown.pw.toml"
-hash = "2463c81d2f9c1682f2fb307effcd40b8cc6c257a10bc14a1306787ad48f52371"
+hash = "6017f38977b2e2b9293454876979c96a4b4b7837e52aedf5c2f2d70d31d1774b"
 metafile = true
 
 [[files]]
@@ -246,11 +221,6 @@ hash = "d2e4214bbe6f93f7f95f688989ee296b419b7dba10dee858abb346ae73b4cfbe"
 metafile = true
 
 [[files]]
-file = "mods/highlight.pw.toml"
-hash = "58ace6ddc01192bd96668e2a833568083f34b0808645e056c0f1e0716f63abe5"
-metafile = true
-
-[[files]]
 file = "mods/immediatelyfast.pw.toml"
 hash = "e6b1db1ab68060617a18d798dc6041533bf58044a078df62ae09fab803eb6e4b"
 metafile = true
@@ -306,6 +276,11 @@ hash = "f531a8ee70e9d78ee62a84e3fd18088070dcf8f2cee2384a8aabed16dbfafe6c"
 metafile = true
 
 [[files]]
+file = "mods/modmenu.pw.toml"
+hash = "d917697e84a95f857a447d26f94d93169a5a62176c93193cdf80c8d8bc1e280a"
+metafile = true
+
+[[files]]
 file = "mods/more-cobblemon-move-anims.pw.toml"
 hash = "f308b3671f2d7c2dc69a2a8d239208b4476579bc24fdfdb21c1e8520d4c5d44d"
 metafile = true
@@ -348,6 +323,11 @@ metafile = true
 [[files]]
 file = "mods/particular.pw.toml"
 hash = "7d44aac0137dc9ca5de82b350e1e2602db35f599874627477a42d6e64e6b9403"
+metafile = true
+
+[[files]]
+file = "mods/placeholder-api.pw.toml"
+hash = "2e2c1b47b513663871e71c89a699c66ac9fcc97633f007ed064ce4410f220f5a"
 metafile = true
 
 [[files]]
@@ -441,11 +421,6 @@ hash = "8e009ac87710fbd8f5990285d36ab2b4755e932664ca1bcb9cdfac116d6e3b6d"
 metafile = true
 
 [[files]]
-file = "mods/title-fixer.pw.toml"
-hash = "10b6a4137e030a03598f86b28fe03c9001d6eb2accb2668d5d68d7eca9a7f575"
-metafile = true
-
-[[files]]
 file = "mods/tooltipfix.pw.toml"
 hash = "ee103bf45111c2cd7ea2d9b31087867dd4b0d07a4b7dad7b138a4ae506127b37"
 metafile = true
@@ -511,18 +486,8 @@ hash = "b873c8a68853191e6e5534e444be2411e14521aec0f2e33779d30fd3fcc1ca77"
 metafile = true
 
 [[files]]
-file = "resourcepacks/moremons.pw.toml"
-hash = "8807200201705e90a82ed3b810e56e508d86eda829ffc46865e510a355fc401c"
-metafile = true
-
-[[files]]
 file = "resourcepacks/move,-samurott!.pw.toml"
 hash = "b4a4d2be87ccc794e0ca56c82f4a4634ef7904c5430ec84fd58d6fd2638eea6d"
-metafile = true
-
-[[files]]
-file = "resourcepacks/odysseymons.pw.toml"
-hash = "a66e89842c97fab2ce5980665f81bd27e49abff6ea4fbb95d8e5be1b8d2cab5b"
 metafile = true
 
 [[files]]

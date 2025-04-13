@@ -1,4 +1,4 @@
-name = "Torkenmon-server"
+name = "Torkenmon Official Pack"
 author = "PerlandDev"
 version = "1.0.0-alpha"
 pack-format = "packwiz:1.1.0"
@@ -6,12 +6,12 @@ pack-format = "packwiz:1.1.0"
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "eb9df14487c3b0d8d5f099cb248585768e6e38040962d7b261410e57e0063323"
+hash = "a15872796dcda261272be82d7825a89c55e673349acdd249667417c44391a2c4"
 
 [versions]
 fabric = "0.16.13"
 minecraft = "1.21.1"
 
 [options]
-acceptable-game-versions = ["1.20.1"]
+acceptable-game-versions = ["1.20.1", "1.21.1"]
 datapack-folder = "./datapacks"
