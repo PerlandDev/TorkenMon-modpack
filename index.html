@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TorkenMon - Recursos Estáticos</title>
+    <style>
+        :root {
+            --primary-color: #3c8527;
+            --secondary-color: #8bc34a;
+            --bg-color: #f5f5f5;
+            --text-color: #333;
+            --link-color: #2e7d32;
+            --border-color: #ddd;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            padding: 0;
+            margin: 0;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+            margin-bottom: 30px;
+            border-radius: 0 0 10px 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        section {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            border-left: 4px solid var(--secondary-color);
+        }
+        
+        h2 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 5px;
+            display: inline-block;
+        }
+        
+        p {
+            margin-bottom: 15px;
+        }
+        
+        a {
+            color: var(--link-color);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+        
+        a:hover {
+            color: var(--secondary-color);
+            text-decoration: underline;
+        }
+        
+        .download-links {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 6px;
+            margin: 20px 0;
+            border: 1px solid var(--border-color);
+        }
+        
+        .download-links h3 {
+            margin-bottom: 10px;
+            color: var(--primary-color);
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 4px;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+        
+        .btn:hover {
+            background-color: var(--secondary-color);
+            text-decoration: none;
+            color: white;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        .discord-section {
+            text-align: center;
+            margin-top: 30px;
+        }
+        
+        .discord-btn {
+            background-color: #5865F2;
+            padding: 12px 24px;
+            border-radius: 4px;
+            color: white;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        
+        .discord-btn:hover {
+            background-color: #4752c4;
+            text-decoration: none;
+            color: white;
+        }
+        
+        code {
+            background-color: #f0f0f0;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-family: Consolas, Monaco, 'Andale Mono', monospace;
+            font-size: 0.9em;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            
+            header {
+                padding: 20px 0;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Recursos estáticos de TorkenMon</h1>
+        </div>
+    </header>
+    
+    <div class="container">
+        <section>
+            <h2>Hola :)</h2>
+            <p>Soy Moisés, desarrollador de PerlandDev y me encargo de mantener la infraestructura de TorkenMon y TorkenCraft.</p>
+        
+            </p>Si has encontrado esta web, probablemente eres una persona curiosa, así que te explicaré lo que está pasando aquí.</p>
+            
+            <p>Este sitio web forma parte de la infraestructura técnica que utilizo para TorkenMon. A continuación te explico cómo funciona todo:</p>
+        </section>
+        
+        <section>
+            <h2>¿Cómo va lo del modpack?</h2>
+            <p>Utilizo <a href="https://github.com/packwiz/packwiz" target="_blank">packwiz</a>, una herramienta CLI increíble que me permite crear y gestionar estructuras de modpacks de forma eficiente.</p>
+            
+            <p>La imagen Docker de mi servidor (basada en <code>itzg/minecraft-server</code>) utiliza esta estructura para descargar los mods directamente desde el CDN de Modrinth, facilitando el despliegue del servidor. Y básicamente esta web se encarga de alojar el archivo estático con la estructura.</p>
+            
+            <div class="download-links">
+                <h3>Descarga la estructura del modpack:</h3>
+                <p>Puedes encontrar y descargar esta estructura si lo deseas en:</p>
+                <a href="/pack.toml" class="btn">Descargar pack.toml</a>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Paquete de Texturas</h2>
+            <p>Este sitio también aloja estáticamente el archivo .zip del paquete de texturas personalizado. Este aparece como opción descargable al entrar al servidor (en caso de que no lo tengas por defecto).</p>
+            
+            <div class="download-links">
+                <h3>Descarga el paquete de texturas:</h3>
+                <a href="/TorkenMon-Visuals.zip" class="btn">Descargar TorkenMon-Visuals.zip</a>
+            </div>
+        </section>
+        
+        <section>
+            <h2>¿Por qué existe esta web?</h2>
+            <p>Bueno... jaja, más que una web, simplemente quería alojar estos archivos estáticos en algún lugar propio y facilitar las automatizaciones y el despliegue del servidor, haciendo que la experiencia sea lo más fluida posible tanto para mí al administrarlo como para ti al jugar.</p>
+            
+            <div class="download-links">
+                <h3>Repositorio del proyecto:</h3>
+                <p>Puedes explorar el código y la estructura completa en GitHub:</p>
+                <a href="https://github.com/PerlandDev/TorkenMon-modpack" class="btn" target="_blank">Ver repositorio en GitHub</a>
+            </div>
+            
+            <p>Si algún día te gustaría montar algo como esto, ¡inténtalo! Puedes consultar el repositorio para ver cómo está estructurado todo.</p>
+        </section>
+        
+        <div class="discord-section">
+            <h2>¿Tienes dudas o quieres unirte?</h2>
+            <p>No tengo problema en responder tus preguntas a través de Discord. ¡Únete a la comunidad Torken!</p>
+            <a href="https://discord.gg/2QjDhT7nKK" class="discord-btn" target="_blank">Unirse al Discord</a>
+        </div>
+        
+        <footer>
+            <p>© 2025 TorkenMon - Gracias por tu interés en nuestro servidor de Minecraft</p>
+        </footer>
+    </div>
+</body>
+</html>
