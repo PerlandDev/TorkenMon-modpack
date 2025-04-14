@@ -23,6 +23,8 @@ jobs:
     steps: 
       # Verifica tu repositorio bajo $GITHUB_WORKSPACE, para que tu trabajo pueda acceder a él
       - uses: actions/checkout@v4 
+        with:
+          fetch-depth: 0  # Necesario para trabajar con ramas
  
       - name: Configurar Go 
         uses: actions/setup-go@v4 
@@ -33,7 +35,23 @@ jobs:
         run: go install github.com/packwiz/packwiz@latest 
  
       - name: Añadir bin de Go al PATH 
-        run: echo "$HOME/go/bin" >> $GITHUB_PATH 
+        run: echo "$HOME/go/bin" >> $GITHUB_PATH
+      
+      - name: Configurar usuario de Git
+        run: |
+          git config --global user.name "GitHub Action"
+          git config --global user.email "action@github.com"
+      
+      - name: Preparar rama mod-list
+        run: |
+          # Verificar si la rama mod-list existe y crear o cambiar a ella
+          if git ls-remote --heads origin mod-list | grep -q 'mod-list'; then
+            echo "La rama mod-list existe, cambiando a ella"
+            git checkout mod-list
+          else
+            echo "La rama mod-list no existe, creándola"
+            git checkout -b mod-list
+          fi
       
       - name: Generar lista de mods
         run: |
@@ -466,9 +484,28 @@ jobs:
           </html>
           EOL
           
+          # Crear un archivo README para la rama
+          cat > README.md << 'EOL'
+          # TorkenMon Mods List
+
+          Esta rama contiene los archivos necesarios para mostrar la lista de mods del modpack TorkenMon.
+
+          ## Archivos
+
+          - `mods.html`: Página web con la lista de mods y funcionalidad de búsqueda
+          - `mods-data.json`: Datos de los mods en formato JSON
+
+          ## Actualización
+
+          Esta rama se actualiza automáticamente mediante GitHub Actions cada vez que hay cambios en la rama principal del repositorio.
+
+          Última actualización: $(date '+%Y-%m-%d %H:%M:%S')
+          EOL
+          
           # Procesar la salida de packwiz list y generar un archivo JSON
           python3 -c '
           import json
+          import datetime
           
           mods_data = []
           with open("mods-raw.txt", "r") as file:
@@ -480,13 +517,33 @@ jobs:
                           "name": line
                       })
           
+          # Añadir metadatos
+          metadata = {
+              "mods": mods_data,
+              "total": len(mods_data),
+              "updated_at": datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+          }
+          
           # Guardar los datos como JSON
           with open("mods-data.json", "w") as json_file:
-              json.dump(mods_data, json_file, ensure_ascii=False, indent=2)
+              json.dump(metadata, json_file, ensure_ascii=False, indent=2)
           '
           
           # Limpiar el archivo temporal
           rm -f mods-raw.txt
+      
+      - name: Commit y push de los cambios
+        run: |
+          # Obtener la fecha y hora actual
+          DATETIME=$(date '+%Y-%m-%d %H:%M:%S')
           
-          # Imprimir un mensaje de éxito
-          echo "✅ Generación de mods.html completada en la raíz del repositorio"
+          # Añadir los archivos generados
+          git add mods.html mods-data.json README.md
+          
+          # Hacer commit con la fecha y hora
+          git commit -m "Actualización de lista de mods: $DATETIME"
+          
+          # Push a la rama mod-list
+          git push -u origin mod-list
+          
+          echo "✅ Rama mod-list actualizada con la lista de mods más reciente"
