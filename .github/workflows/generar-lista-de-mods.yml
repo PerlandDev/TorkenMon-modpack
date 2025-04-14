@@ -552,9 +552,8 @@ jobs:
             # Forzar actualización de la rama remota
             git push -f origin temp_branch:mod-list
             
-            # Limpiar
-            git checkout main
-            git branch -D temp_branch
+            # No intentar cambiar de rama, ya que podría causar conflictos
+            # En su lugar, garantizamos que la rama remota está actualizada
           else
             echo "La rama mod-list no existe, creándola"
             
@@ -563,6 +562,9 @@ jobs:
             
             # Eliminar todos los archivos del área de stage
             git rm -rf --cached .
+            
+            # Eliminar todos los archivos no rastreados para evitar conflictos
+            git clean -fd
             
             # Mover los archivos creados a la raíz
             cp -r temp_mod_list/* .
@@ -577,8 +579,7 @@ jobs:
             # Push a la nueva rama
             git push -u origin mod-list
             
-            # Volver a la rama principal
-            git checkout main
+            # No intentamos volver a la rama principal para evitar conflictos
           fi
           
           echo "✅ Rama mod-list actualizada con solo los archivos necesarios"
