@@ -37,14 +37,11 @@ jobs:
       
       - name: Generar lista de mods
         run: |
-          # Crear directorio public si no existe
-          mkdir -p public
-          
-          # Ejecutar packwiz list y guardar la salida en un archivo
-          packwiz list > public/mods-raw.txt
+          # Ejecutar packwiz list y guardar la salida en un archivo temporal
+          packwiz list > mods-raw.txt
           
           # Generar archivo HTML con la lista de mods
-          cat > public/mods.html << 'EOL'
+          cat > mods.html << 'EOL'
           <!DOCTYPE html>
           <html lang="es">
           <head>
@@ -474,7 +471,7 @@ jobs:
           import json
           
           mods_data = []
-          with open("public/mods-raw.txt", "r") as file:
+          with open("mods-raw.txt", "r") as file:
               for line in file:
                   line = line.strip()
                   if line:
@@ -484,12 +481,12 @@ jobs:
                       })
           
           # Guardar los datos como JSON
-          with open("public/mods-data.json", "w") as json_file:
+          with open("mods-data.json", "w") as json_file:
               json.dump(mods_data, json_file, ensure_ascii=False, indent=2)
           '
           
-          # Copiar el index.html original a la carpeta public si existe
-          cp -f index.html public/ 2>/dev/null || echo "El archivo index.html no existe, omitiendo copia"
+          # Limpiar el archivo temporal
+          rm -f mods-raw.txt
           
           # Imprimir un mensaje de éxito
-          echo "✅ Generación de lista de mods completada"
+          echo "✅ Generación de mods.html completada en la raíz del repositorio"
