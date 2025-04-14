@@ -42,24 +42,17 @@ jobs:
           git config --global user.name "GitHub Action"
           git config --global user.email "action@github.com"
       
-      - name: Preparar rama mod-list
-        run: |
-          # Verificar si la rama mod-list existe y crear o cambiar a ella
-          if git ls-remote --heads origin mod-list | grep -q 'mod-list'; then
-            echo "La rama mod-list existe, cambiando a ella"
-            git checkout mod-list
-          else
-            echo "La rama mod-list no existe, creándola"
-            git checkout -b mod-list
-          fi
-      
       - name: Generar lista de mods
         run: |
           # Ejecutar packwiz list y guardar la salida en un archivo temporal
           packwiz list > mods-raw.txt
           
-          # Generar archivo HTML con la lista de mods
-          cat > mods.html << 'EOL'
+          # Crear un directorio temporal para los archivos de la rama mod-list
+          mkdir -p temp_mod_list
+          cd temp_mod_list
+          
+          # Generar archivo HTML con la lista de mods (renombrado a index.html)
+          cat > index.html << 'EOL'
           <!DOCTYPE html>
           <html lang="es">
           <head>
@@ -394,7 +387,7 @@ jobs:
                       try {
                           const response = await fetch('mods-data.json');
                           const data = await response.json();
-                          return data;
+                          return data.mods;
                       } catch (error) {
                           console.error('Error al cargar los mods:', error);
                           return [];
@@ -484,66 +477,111 @@ jobs:
           </html>
           EOL
           
-          # Crear un archivo README para la rama
-          cat > README.md << 'EOL'
+          # Procesar la salida de packwiz list y generar un archivo JSON
+          python3 -c "
+          import json
+          import datetime
+          
+          mods_data = []
+          with open('../mods-raw.txt', 'r') as file:
+              for line in file:
+                  line = line.strip()
+                  if line:
+                      # Como solo tenemos el nombre del mod, creamos un objeto simple
+                      mods_data.append({
+                          'name': line
+                      })
+          
+          # Añadir metadatos
+          metadata = {
+              'mods': mods_data,
+              'total': len(mods_data),
+              'updated_at': datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+          }
+          
+          # Guardar los datos como JSON
+          with open('mods-data.json', 'w') as json_file:
+              json.dump(metadata, json_file, ensure_ascii=False, indent=2)
+          "
+          
+          # Crear un archivo README para la rama con fecha dinámica
+          DATE_NOW=$(date '+%Y-%m-%d %H:%M:%S')
+          
+          cat > README.md << EOL
           # TorkenMon Mods List
 
           Esta rama contiene los archivos necesarios para mostrar la lista de mods del modpack TorkenMon.
 
           ## Archivos
 
-          - `mods.html`: Página web con la lista de mods y funcionalidad de búsqueda
-          - `mods-data.json`: Datos de los mods en formato JSON
+          - \`index.html\`: Página web con la lista de mods y funcionalidad de búsqueda
+          - \`mods-data.json\`: Datos de los mods en formato JSON
 
           ## Actualización
 
           Esta rama se actualiza automáticamente mediante GitHub Actions cada vez que hay cambios en la rama principal del repositorio.
 
-          Última actualización: $(date '+%Y-%m-%d %H:%M:%S')
+          Última actualización: ${DATE_NOW}
           EOL
           
-          # Procesar la salida de packwiz list y generar un archivo JSON
-          python3 -c '
-          import json
-          import datetime
-          
-          mods_data = []
-          with open("mods-raw.txt", "r") as file:
-              for line in file:
-                  line = line.strip()
-                  if line:
-                      # Como solo tenemos el nombre del mod, creamos un objeto simple
-                      mods_data.append({
-                          "name": line
-                      })
-          
-          # Añadir metadatos
-          metadata = {
-              "mods": mods_data,
-              "total": len(mods_data),
-              "updated_at": datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-          }
-          
-          # Guardar los datos como JSON
-          with open("mods-data.json", "w") as json_file:
-              json.dump(metadata, json_file, ensure_ascii=False, indent=2)
-          '
-          
-          # Limpiar el archivo temporal
-          rm -f mods-raw.txt
+          # Volver al directorio principal
+          cd ..
       
-      - name: Commit y push de los cambios
+      - name: Preparar y actualizar rama mod-list
         run: |
-          # Obtener la fecha y hora actual
-          DATETIME=$(date '+%Y-%m-%d %H:%M:%S')
+          # Verificar si la rama mod-list existe remotamente
+          if git ls-remote --heads origin mod-list | grep -q 'mod-list'; then
+            echo "La rama mod-list existe, actualizándola"
+            
+            # Crear una nueva rama local basada en una rama vacía
+            git checkout --orphan temp_branch
+            
+            # Eliminar todos los archivos del área de stage
+            git rm -rf --cached .
+            
+            # Mover los archivos creados a la raíz
+            cp -r temp_mod_list/* .
+            
+            # Añadir solo los archivos necesarios
+            git add index.html mods-data.json README.md
+            
+            # Hacer commit
+            DATETIME=$(date '+%Y-%m-%d %H:%M:%S')
+            git commit -m "Actualización de lista de mods: $DATETIME"
+            
+            # Forzar actualización de la rama remota
+            git push -f origin temp_branch:mod-list
+            
+            # Limpiar
+            git checkout main
+            git branch -D temp_branch
+          else
+            echo "La rama mod-list no existe, creándola"
+            
+            # Crear una nueva rama huérfana (sin historial)
+            git checkout --orphan mod-list
+            
+            # Eliminar todos los archivos del área de stage
+            git rm -rf --cached .
+            
+            # Mover los archivos creados a la raíz
+            cp -r temp_mod_list/* .
+            
+            # Añadir solo los archivos necesarios
+            git add index.html mods-data.json README.md
+            
+            # Hacer commit
+            DATETIME=$(date '+%Y-%m-%d %H:%M:%S')
+            git commit -m "Creación inicial de lista de mods: $DATETIME"
+            
+            # Push a la nueva rama
+            git push -u origin mod-list
+            
+            # Volver a la rama principal
+            git checkout main
+          fi
           
-          # Añadir los archivos generados
-          git add mods.html mods-data.json README.md
+          echo "✅ Rama mod-list actualizada con solo los archivos necesarios"
           
-          # Hacer commit con la fecha y hora
-          git commit -m "Actualización de lista de mods: $DATETIME"
-          
-          # Push a la rama mod-list
-          git push -u origin mod-list
-          
-          echo "✅ Rama mod-list actualizada con la lista de mods más reciente"
+          # Limpiar archivos temporales
+          rm -rf temp_mod_list mods-raw.txt
