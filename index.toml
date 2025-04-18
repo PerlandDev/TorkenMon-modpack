@@ -145,6 +145,11 @@ hash = "78c466aafcd16c642792af85d430717c7dcaed3df753838478c3534ba2cd5ed7"
 metafile = true
 
 [[files]]
+file = "mods/cobblemon-integrations.pw.toml"
+hash = "f535eba4ed46fcf4edea6be27d4556f1cc197e218b3e466ef11e93b20b8217b5"
+metafile = true
+
+[[files]]
 file = "mods/cobblemon-legendary-structures.pw.toml"
 hash = "516f919c449af1af67374a500c385e4cb9ec26450edd1de4b85dd97895958bf5"
 metafile = true
