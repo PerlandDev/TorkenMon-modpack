@@ -5,5 +5,5 @@ Dockerfile
 .gitignore
 .gitattributes
 .mrpack
-.html
+*.html
 .zip

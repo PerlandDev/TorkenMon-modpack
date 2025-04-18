@@ -1,13 +1,13 @@
 name = "Hydro Reanimodel Pack [Cobblemon]"
-filename = "Hydro Reanimodel Pack 0.1.0.zip"
+filename = "Hydro Reanimodel Pack 0.1.1.zip"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/lYp6oiT3/versions/qC4wM0p8/Hydro%20Reanimodel%20Pack%200.1.0.zip"
+url = "https://cdn.modrinth.com/data/lYp6oiT3/versions/nzn7WXVD/Hydro%20Reanimodel%20Pack%200.1.1.zip"
 hash-format = "sha512"
-hash = "be0f69d2530acf305f22fcef4d0839be7f876280742504a6bcb0329effa9a2e821421a7a01bdd8330213c786f1610403aae6bfc215e5aea51a12898804f8620e"
+hash = "83585a614e6a441c6ed4d6618455c9a9bd65a69fb7a392c60ca42aa45a58dbd8e3297095482881b4211644e28c75c8520497313ce43a676064441b5ceb271a5b"
 
 [update]
 [update.modrinth]
 mod-id = "lYp6oiT3"
-version = "qC4wM0p8"
+version = "nzn7WXVD"
