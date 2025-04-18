@@ -145,6 +145,11 @@ hash = "78c466aafcd16c642792af85d430717c7dcaed3df753838478c3534ba2cd5ed7"
 metafile = true
 
 [[files]]
+file = "mods/cobblemon-legendary-structures.pw.toml"
+hash = "516f919c449af1af67374a500c385e4cb9ec26450edd1de4b85dd97895958bf5"
+metafile = true
+
+[[files]]
 file = "mods/cobblemon-mega-showdown.pw.toml"
 hash = "869de4291177239ef32e44c3e71a19bae2c06210f140ba8a540e462053abeb8a"
 metafile = true
@@ -297,6 +302,11 @@ metafile = true
 [[files]]
 file = "mods/longer-chat-history.pw.toml"
 hash = "073eb0fb219c89c85b444776cc64b084cf0b7ea500609710275ef5084deb3f4f"
+metafile = true
+
+[[files]]
+file = "mods/loot-table-modifier.pw.toml"
+hash = "309d8b9aaf25979ea38759cabba7e94f746ec6addb3cb8d7bc9834ff883249b1"
 metafile = true
 
 [[files]]
