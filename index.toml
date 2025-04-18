@@ -56,10 +56,6 @@ hash = "03c4085c8644d6578c7f809753f1180e47ecd7a1742667cbd1eb132ad2a48969"
 metafile = true
 
 [[files]]
-file = "index.html"
-hash = "b2aa6e31d74f5bc22faeb2284996cd99fa8600c7eb08cc71125b5d0ec83c1f70"
-
-[[files]]
 file = "mods/3dskinlayers.pw.toml"
 hash = "7a753ad3aa3b7d586383884fb59cf8cf8c7a5ebbcf17f29478cd48c580cae542"
 metafile = true
@@ -76,7 +72,7 @@ metafile = true
 
 [[files]]
 file = "mods/athena-ctm.pw.toml"
-hash = "0dc6b099b0bdf70ce41e2ed30e70d6b5cba93d127d6b3f9e455566c4c1b65ff2"
+hash = "d2a86312ce8aeff00586860adbe0cc52752e0d7f023621a898088fc62d546cd0"
 metafile = true
 
 [[files]]
