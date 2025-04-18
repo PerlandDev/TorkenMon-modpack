@@ -44,8 +44,8 @@ jobs:
       
       - name: Generar lista de mods
         run: |
-          # Ejecutar packwiz list y guardar la salida en un archivo temporal
-          packwiz list > mods-raw.txt
+          # Ejecutar packwiz list -v para incluir las versiones y guardar la salida en un archivo temporal
+          packwiz list -v > mods-raw.txt
           
           # Crear un directorio temporal para los archivos de la rama mod-list
           mkdir -p temp_mod_list
@@ -61,12 +61,18 @@ jobs:
               <title>TorkenMon - Lista de Mods</title>
               <style>
                   :root {
-                      --primary-color: #3c8527;
+                      --primary-color: #4caf50;
                       --secondary-color: #8bc34a;
-                      --bg-color: #f5f5f5;
-                      --text-color: #333;
-                      --link-color: #2e7d32;
-                      --border-color: #ddd;
+                      --bg-color: #121212;
+                      --card-bg: #1e1e1e;
+                      --text-color: #e0e0e0;
+                      --text-secondary: #aaaaaa;
+                      --link-color: #81c784;
+                      --border-color: #333333;
+                      --header-gradient-1: #2e7d32;
+                      --header-gradient-2: #1b5e20;
+                      --search-bg: #272727;
+                      --btn-hover: #388e3c;
                   }
                   
                   * {
@@ -91,18 +97,20 @@ jobs:
                   }
                   
                   header {
-                      background-color: var(--primary-color);
+                      background: linear-gradient(135deg, var(--header-gradient-1), var(--header-gradient-2));
                       color: white;
-                      padding: 30px 0;
+                      padding: 40px 0;
                       text-align: center;
                       margin-bottom: 30px;
-                      border-radius: 0 0 10px 10px;
-                      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+                      border-radius: 0 0 15px 15px;
+                      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
                   }
                   
                   h1 {
                       font-size: 2.5rem;
                       margin-bottom: 10px;
+                      font-weight: 700;
+                      text-shadow: 0 2px 4px rgba(0,0,0,0.2);
                   }
                   
                   .subtitle {
@@ -111,11 +119,11 @@ jobs:
                   }
                   
                   section {
-                      background: white;
+                      background: var(--card-bg);
                       padding: 25px;
-                      border-radius: 8px;
+                      border-radius: 10px;
                       margin-bottom: 25px;
-                      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+                      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
                       border-left: 4px solid var(--secondary-color);
                   }
                   
@@ -123,12 +131,13 @@ jobs:
                       color: var(--primary-color);
                       margin-bottom: 15px;
                       border-bottom: 2px solid var(--secondary-color);
-                      padding-bottom: 5px;
+                      padding-bottom: 8px;
                       display: inline-block;
                   }
                   
                   p {
                       margin-bottom: 15px;
+                      color: var(--text-color);
                   }
                   
                   a {
@@ -153,13 +162,22 @@ jobs:
                   }
                   
                   .search-box {
-                      padding: 12px;
+                      padding: 12px 15px;
                       width: 100%;
                       max-width: 500px;
                       border: 1px solid var(--border-color);
-                      border-radius: 6px;
+                      border-radius: 8px;
                       font-size: 16px;
                       flex-grow: 1;
+                      background-color: var(--search-bg);
+                      color: var(--text-color);
+                      transition: all 0.3s ease;
+                  }
+                  
+                  .search-box:focus {
+                      outline: none;
+                      border-color: var(--primary-color);
+                      box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.2);
                   }
                   
                   .filter-options {
@@ -169,9 +187,9 @@ jobs:
                   }
                   
                   .stats {
-                      background-color: #f8f9fa;
+                      background-color: rgba(255, 255, 255, 0.05);
                       padding: 15px;
-                      border-radius: 6px;
+                      border-radius: 8px;
                       margin-bottom: 20px;
                       border: 1px solid var(--border-color);
                   }
@@ -183,25 +201,33 @@ jobs:
                   }
                   
                   .mod-item {
-                      background-color: white;
-                      padding: 15px;
-                      margin-bottom: 10px;
-                      border-radius: 6px;
-                      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+                      background-color: rgba(255, 255, 255, 0.03);
+                      padding: 18px;
+                      margin-bottom: 12px;
+                      border-radius: 8px;
+                      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
                       display: flex;
                       justify-content: space-between;
                       align-items: center;
                       border-left: 3px solid var(--secondary-color);
+                      transition: transform 0.2s ease, box-shadow 0.2s ease;
+                  }
+                  
+                  .mod-item:hover {
+                      transform: translateY(-2px);
+                      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
                   }
                   
                   .mod-name {
                       font-weight: bold;
                       color: var(--primary-color);
+                      font-size: 1.1em;
                   }
                   
                   .mod-version {
-                      color: #666;
+                      color: var(--text-secondary);
                       font-size: 0.9em;
+                      margin-top: 5px;
                   }
                   
                   .mod-details {
@@ -211,8 +237,8 @@ jobs:
                   
                   .no-results {
                       text-align: center;
-                      padding: 20px;
-                      background-color: white;
+                      padding: 30px;
+                      background-color: var(--card-bg);
                       border-radius: 8px;
                       border-left: 4px solid var(--secondary-color);
                   }
@@ -221,10 +247,10 @@ jobs:
                       display: inline-block;
                       background-color: var(--primary-color);
                       color: white;
-                      padding: 8px 16px;
-                      border-radius: 4px;
+                      padding: 10px 18px;
+                      border-radius: 6px;
                       margin-top: 10px;
-                      transition: background-color 0.3s;
+                      transition: all 0.3s ease;
                       cursor: pointer;
                       border: none;
                       font-size: 14px;
@@ -232,59 +258,68 @@ jobs:
                   }
                   
                   .btn:hover {
-                      background-color: var(--secondary-color);
+                      background-color: var(--btn-hover);
                       text-decoration: none;
                       color: white;
+                      transform: translateY(-2px);
+                      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
                   }
                   
                   .btn-secondary {
-                      background-color: #95a5a6;
+                      background-color: #546e7a;
                   }
                   
                   .btn-secondary:hover {
-                      background-color: #7f8c8d;
+                      background-color: #455a64;
                   }
                   
                   footer {
                       text-align: center;
                       padding: 20px;
-                      margin-top: 30px;
-                      color: #666;
+                      margin-top: 40px;
+                      color: var(--text-secondary);
                       font-size: 0.9rem;
+                      border-top: 1px solid var(--border-color);
                   }
                   
                   .download-links {
-                      background-color: #f8f9fa;
-                      padding: 15px;
-                      border-radius: 6px;
+                      background-color: rgba(255, 255, 255, 0.05);
+                      padding: 20px;
+                      border-radius: 8px;
                       margin: 20px 0;
                       border: 1px solid var(--border-color);
                   }
                   
                   .download-links h3 {
-                      margin-bottom: 10px;
+                      margin-bottom: 15px;
                       color: var(--primary-color);
                   }
                   
                   .discord-section {
                       text-align: center;
-                      margin-top: 30px;
+                      margin-top: 40px;
+                      padding: 30px;
+                      background-color: rgba(88, 101, 242, 0.1);
+                      border-radius: 10px;
                   }
                   
                   .discord-btn {
                       background-color: #5865F2;
-                      padding: 12px 24px;
-                      border-radius: 4px;
+                      padding: 12px 28px;
+                      border-radius: 6px;
                       color: white;
                       font-weight: bold;
                       display: inline-block;
-                      margin-top: 10px;
+                      margin-top: 15px;
+                      transition: all 0.3s ease;
                   }
                   
                   .discord-btn:hover {
                       background-color: #4752c4;
                       text-decoration: none;
                       color: white;
+                      transform: translateY(-2px);
+                      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
                   }
                   
                   .home-btn {
@@ -299,7 +334,7 @@ jobs:
                       }
                       
                       header {
-                          padding: 20px 0;
+                          padding: 25px 0;
                       }
                       
                       h1 {
@@ -411,6 +446,7 @@ jobs:
                               listItem.innerHTML = `
                                   <div>
                                       <div class="mod-name">${mod.name}</div>
+                                      <div class="mod-version">${mod.version}</div>
                                   </div>
                               `;
                               
@@ -435,7 +471,8 @@ jobs:
                       const searchTerm = document.getElementById('searchBox').value.toLowerCase();
                       
                       const filteredMods = mods.filter(mod => {
-                          return mod.name.toLowerCase().includes(searchTerm);
+                          return mod.name.toLowerCase().includes(searchTerm) || 
+                                 (mod.version && mod.version.toLowerCase().includes(searchTerm));
                       });
                       
                       displayMods(filteredMods);
@@ -477,20 +514,32 @@ jobs:
           </html>
           EOL
           
-          # Procesar la salida de packwiz list y generar un archivo JSON
+          # Procesar la salida de packwiz list -v y generar un archivo JSON
           python3 -c "
           import json
           import datetime
+          import re
           
           mods_data = []
           with open('../mods-raw.txt', 'r') as file:
               for line in file:
                   line = line.strip()
                   if line:
-                      # Como solo tenemos el nombre del mod, creamos un objeto simple
-                      mods_data.append({
-                          'name': line
-                      })
+                      # Buscar el patrón: nombre (versión)
+                      match = re.match(r'(.*?)\s*\((.*?)\)', line)
+                      if match:
+                          mod_name = match.group(1).strip()
+                          mod_version = match.group(2).strip()
+                          mods_data.append({
+                              'name': mod_name,
+                              'version': mod_version
+                          })
+                      else:
+                          # Si no encuentra el patrón, usar el nombre completo
+                          mods_data.append({
+                              'name': line,
+                              'version': 'Desconocida'
+                          })
           
           # Añadir metadatos
           metadata = {
