@@ -341,6 +341,11 @@ hash = "df1738bfce3f9953b2af61ffa62c937491d6518288ebb004228b7f17dd994256"
 metafile = true
 
 [[files]]
+file = "mods/necronomicon.pw.toml"
+hash = "e911bf4d0ecaae8377f92a30fe60717579fb132c91db9465073b48c4d30f4104"
+metafile = true
+
+[[files]]
 file = "mods/netherportalfix.pw.toml"
 hash = "537bdd1937193d94cf47f2232e2b38357415e5af8c950d97661b3ae881adbb4e"
 metafile = true
@@ -518,6 +523,11 @@ metafile = true
 [[files]]
 file = "mods/yacl.pw.toml"
 hash = "052b70117c2e9a3a697a36f449b220be7bfba215f3a2e43b5ce7faff9e88b2e6"
+metafile = true
+
+[[files]]
+file = "mods/you-shall-not-spawn.pw.toml"
+hash = "0872e0697edfd6cada47815488d210c623ef6ba6aba17cfd271b4faa4af54439"
 metafile = true
 
 [[files]]
