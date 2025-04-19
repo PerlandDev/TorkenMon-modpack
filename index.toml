@@ -136,6 +136,11 @@ hash = "127162cc7ed4c495f6411fa119f90b08c9e7d0ba1cb5b0c7774ab3cf4a35e716"
 metafile = true
 
 [[files]]
+file = "mods/cobbleloots.pw.toml"
+hash = "d24af54787043ffc04400953a4d830600886227a53391f79df51daee794b6fea"
+metafile = true
+
+[[files]]
 file = "mods/cobblemon-fixedstarterivs.pw.toml"
 hash = "78c466aafcd16c642792af85d430717c7dcaed3df753838478c3534ba2cd5ed7"
 metafile = true
@@ -178,6 +183,11 @@ metafile = true
 [[files]]
 file = "mods/cobblemonrizetweaks.pw.toml"
 hash = "21e6baad95fe66d04640f0ff40ae1ccb67eae49d8912842d8b38348cda22bb30"
+metafile = true
+
+[[files]]
+file = "mods/cobbreeding.pw.toml"
+hash = "e171002e7266be82b63522a7ae2bb594854e08468271bb27bddd5acb33b8bbc4"
 metafile = true
 
 [[files]]

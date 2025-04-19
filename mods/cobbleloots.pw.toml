@@ -1,0 +1,13 @@
+name = "Cobbleloots: Loot Balls and More!"
+filename = "cobbleloots-fabric-2.0.4.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/kcudYghD/versions/1uFXus49/cobbleloots-fabric-2.0.4.jar"
+hash-format = "sha512"
+hash = "6266eed61aadc34a021a0384bd255607f8e6b3118c09b77a67bfd97f385b2d81bf5d69a5010b26d047ca7efedf6b5e726686bd0d0ef066b1936e79387f328c6d"
+
+[update]
+[update.modrinth]
+mod-id = "kcudYghD"
+version = "1uFXus49"
