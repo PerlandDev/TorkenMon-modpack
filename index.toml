@@ -161,6 +161,11 @@ hash = "869de4291177239ef32e44c3e71a19bae2c06210f140ba8a540e462053abeb8a"
 metafile = true
 
 [[files]]
+file = "mods/cobblemon-pokemon-badges.pw.toml"
+hash = "f9fca804b47d62948dc79c800723fa4e2e8d114171af6c19c901a59b99fbb073"
+metafile = true
+
+[[files]]
 file = "mods/cobblemon-size-variations.pw.toml"
 hash = "d7861a73cbda588eb3b2dd823e6a9ec37ae87342e94af37292e4eb3e859f38cd"
 metafile = true
