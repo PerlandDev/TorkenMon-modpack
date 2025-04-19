@@ -1,0 +1,474 @@
+{
+  "mods": [
+    {
+      "name": "3D Skin Layers",
+      "version": "skinlayers3d-fabric-1.7.5-mc1.21.jar"
+    },
+    {
+      "name": "Alphabet Soup [Cobblemon]",
+      "version": "AlphabetSoup-v2.2.zip"
+    },
+    {
+      "name": "AppleSkin",
+      "version": "appleskin-fabric-mc1.21-3.0.6.jar"
+    },
+    {
+      "name": "Architectury API",
+      "version": "architectury-13.0.8-fabric.jar"
+    },
+    {
+      "name": "Athena",
+      "version": "athena-fabric-1.21-4.0.1.jar"
+    },
+    {
+      "name": "Bad Wither No Cookie - Reloaded",
+      "version": "bwncr-fabric-1.21.1-3.20.3.jar"
+    },
+    {
+      "name": "Balm",
+      "version": "balm-fabric-1.21.1-21.0.39.jar"
+    },
+    {
+      "name": "Better Ping Display [Fabric]",
+      "version": "BetterPingDisplay-Fabric-1.21.1-1.1.1.jar"
+    },
+    {
+      "name": "Better Third Person",
+      "version": "BetterThirdPerson-Fabric-1.21-1.9.0.jar"
+    },
+    {
+      "name": "Bobby",
+      "version": "bobby-5.2.4+mc1.21.jar"
+    },
+    {
+      "name": "Bookshelf",
+      "version": "bookshelf-fabric-1.21.1-21.1.57.jar"
+    },
+    {
+      "name": "Camera Utils",
+      "version": "camerautils-fabric-1.21.1-1.0.16.jar"
+    },
+    {
+      "name": "Chat Heads",
+      "version": "chat_heads-0.13.13-fabric-1.21.jar"
+    },
+    {
+      "name": "CIT Resewn",
+      "version": "citresewn-1.2.2+1.21.jar"
+    },
+    {
+      "name": "Cloth Config API",
+      "version": "cloth-config-15.0.140-fabric.jar"
+    },
+    {
+      "name": "Clumps",
+      "version": "Clumps-fabric-1.21.1-19.0.0.1.jar"
+    },
+    {
+      "name": "CobbleCats [cobblemon]",
+      "version": "cobble_cats.zip"
+    },
+    {
+      "name": "CobbleFurnies",
+      "version": "CobbleFurnies-fabric-0.5.jar"
+    },
+    {
+      "name": "Cobbleloots: Loot Balls and More!",
+      "version": "cobbleloots-fabric-2.0.4.jar"
+    },
+    {
+      "name": "Cobblemon",
+      "version": "Cobblemon-fabric-1.6.1+1.21.1.jar"
+    },
+    {
+      "name": "Cobblemon : Remixed Shinies",
+      "version": "Remixed Cobble Shinies.zip"
+    },
+    {
+      "name": "Cobblemon Alphas",
+      "version": "Cobblemon Alphas Datapack Beta 1.1.zip"
+    },
+    {
+      "name": "Cobblemon Fixed Starter IVs",
+      "version": "cobblemon-fixedstarterivs-1.6-fabric-1.0.0.jar"
+    },
+    {
+      "name": "Cobblemon Integrations",
+      "version": "cobblemonintegrations-fabric-1.21.1-1.1.2.jar"
+    },
+    {
+      "name": "Cobblemon Interface",
+      "version": "Cobblemon Interface v1.4.1.zip"
+    },
+    {
+      "name": "Cobblemon Pokemon Badges",
+      "version": "cobblemonpokemonbadges-fabric-0.1.1.jar"
+    },
+    {
+      "name": "Cobblemon RIze Tweaks",
+      "version": "cobblemonRIzetweaks-1.1.3.jar"
+    },
+    {
+      "name": "Cobblemon Size Variations",
+      "version": "CobblemonSizeVariationFabric-1.1.0+1.6.1.jar"
+    },
+    {
+      "name": "Cobblemon Texto Corregido Español",
+      "version": "Cobblemon Texto Corregido_es v2.0.zip"
+    },
+    {
+      "name": "Cobblemon UI Tweaks",
+      "version": "cobblemon-ui-tweaks-1.0.7.jar"
+    },
+    {
+      "name": "Cobblemon: Legends Untold",
+      "version": "cobblemon-legendary-structures-2.1.jar"
+    },
+    {
+      "name": "Cobblemon: Mega Showdown",
+      "version": "Cobblemon_MegaShowdown-9.1.3-release-fabric.jar"
+    },
+    {
+      "name": "CobblemonRider",
+      "version": "cobblemonridingfabric-1.3.7.jar"
+    },
+    {
+      "name": "CobbleMotion v1.2",
+      "version": "Cobblemotion_v1.2.zip"
+    },
+    {
+      "name": "Cobbreeding",
+      "version": "Cobbreeding-fabric-1.9.0.jar"
+    },
+    {
+      "name": "Complementary Shaders - Reimagined",
+      "version": "ComplementaryReimagined_r5.4.zip"
+    },
+    {
+      "name": "Complementary Shaders - Unbound",
+      "version": "ComplementaryUnbound_r5.4.zip"
+    },
+    {
+      "name": "Continuity",
+      "version": "continuity-3.0.0+1.21.jar"
+    },
+    {
+      "name": "Crafting Tweaks",
+      "version": "craftingtweaks-fabric-1.21.1-21.1.5.jar"
+    },
+    {
+      "name": "Cut Through",
+      "version": "CutThrough-v21.1.0-1.21.1-Fabric.jar"
+    },
+    {
+      "name": "DEAL's Legendaries",
+      "version": "DEAL'sLegendaries-v.1.4.zip"
+    },
+    {
+      "name": "Dynamic FPS",
+      "version": "dynamic-fps-3.9.3+minecraft-1.21.0-fabric.jar"
+    },
+    {
+      "name": "E19 - Cobblemon Minimap Icons",
+      "version": "E19 Cobblemon Minimap Icons.zip"
+    },
+    {
+      "name": "Enchantment Descriptions",
+      "version": "enchdesc-fabric-1.21.1-21.1.7.jar"
+    },
+    {
+      "name": "Entity Culling",
+      "version": "entityculling-fabric-1.7.4-mc1.21.jar"
+    },
+    {
+      "name": "Euphonium",
+      "version": "euphonium-1.0.3+1.21.jar"
+    },
+    {
+      "name": "Fabric API",
+      "version": "fabric-api-0.115.4+1.21.1.jar"
+    },
+    {
+      "name": "Fabric Language Kotlin",
+      "version": "fabric-language-kotlin-1.13.2+kotlin.2.1.20.jar"
+    },
+    {
+      "name": "FerriteCore",
+      "version": "ferritecore-7.0.2-hotfix-fabric.jar"
+    },
+    {
+      "name": "FeyTweaks",
+      "version": "FeyTweaks-1.21-1.2.8.jar"
+    },
+    {
+      "name": "Forge Config API Port",
+      "version": "ForgeConfigAPIPort-v21.1.3-1.21.1-Fabric.jar"
+    },
+    {
+      "name": "Fully Hisuian Starters",
+      "version": "Cobblemon"
+    },
+    {
+      "name": "Geckolib",
+      "version": "geckolib-fabric-1.21.1-4.7.5.1.jar"
+    },
+    {
+      "name": "GenoMons [Cobblemon]",
+      "version": "Genomons 1.6 [Beta V3].zip"
+    },
+    {
+      "name": "HiddenMons [Cobblemon]",
+      "version": "hiddenmons-cobblemon-v0.6.jar"
+    },
+    {
+      "name": "Highlight",
+      "version": "highlight-fabric-1.21-3.0.0.jar"
+    },
+    {
+      "name": "Hydro Reanimodel Pack [Cobblemon]",
+      "version": "Hydro Reanimodel Pack 0.1.1.zip"
+    },
+    {
+      "name": "ImmediatelyFast",
+      "version": "ImmediatelyFast-Fabric-1.6.5+1.21.1.jar"
+    },
+    {
+      "name": "InvMove",
+      "version": "InvMove-0.9.0+1.21.1-Fabric.jar"
+    },
+    {
+      "name": "InvMoveCompats",
+      "version": "InvMoveCompats-0.4.0+1.21.4-Fabric.jar"
+    },
+    {
+      "name": "Iris Shaders",
+      "version": "iris-fabric-1.8.8+mc1.21.1.jar"
+    },
+    {
+      "name": "Jade 🔍",
+      "version": "Jade-1.21.1-Fabric-15.10.0.jar"
+    },
+    {
+      "name": "Kale's Collection [Cobblemon]",
+      "version": "Kale's Collection [v1.8.2].zip"
+    },
+    {
+      "name": "Krypton",
+      "version": "krypton-0.2.8.jar"
+    },
+    {
+      "name": "LambDynamicLights",
+      "version": "lambdynamiclights-4.1.0+1.21.1.jar"
+    },
+    {
+      "name": "Language Reload",
+      "version": "language-reload-1.7.3+1.21.1.jar"
+    },
+    {
+      "name": "Lithium",
+      "version": "lithium-fabric-0.15.0+mc1.21.1.jar"
+    },
+    {
+      "name": "Longer Chat History",
+      "version": "LongerChatHistory-fabric-1.7.jar"
+    },
+    {
+      "name": "Loot Table Modifier",
+      "version": "loot-table-modifier-1.1.1+1.21.4.jar"
+    },
+    {
+      "name": "Make Bubbles Pop",
+      "version": "make_bubbles_pop-0.3.0-fabric-mc1.19.4-1.21.jar"
+    },
+    {
+      "name": "MissingMons [cobblemon]",
+      "version": "MissingMon_v3.4.1 [Bolts & Brawn Update].zip"
+    },
+    {
+      "name": "Mod Menu",
+      "version": "modmenu-11.0.3.jar"
+    },
+    {
+      "name": "More Cobblemon Move Animations",
+      "version": "more-cobblemon-move-anims-1.3.af.jar"
+    },
+    {
+      "name": "MoreCobblemonTweaks",
+      "version": "MoreCobblemonTweaks-fabric-1.0.3.jar"
+    },
+    {
+      "name": "Move, Samurott!",
+      "version": "Move, Samurott! v1.2.zip"
+    },
+    {
+      "name": "Necronomicon API",
+      "version": "Necronomicon-Fabric-1.6.0+1.21.jar"
+    },
+    {
+      "name": "NetherPortalFix",
+      "version": "netherportalfix-fabric-1.21.1-21.1.3.jar"
+    },
+    {
+      "name": "No Chat Reports",
+      "version": "NoChatReports-FABRIC-1.21.1-v2.9.1.jar"
+    },
+    {
+      "name": "Not Enough Animations",
+      "version": "notenoughanimations-fabric-1.9.3-mc1.21.jar"
+    },
+    {
+      "name": "NotSoCobblemon Allone's Additions",
+      "version": "NotSoCobblemon.zip"
+    },
+    {
+      "name": "Open Loader",
+      "version": "OpenLoader-fabric-1.21.1-21.1.2.jar"
+    },
+    {
+      "name": "oωo",
+      "version": "owo-lib"
+    },
+    {
+      "name": "Particle Rain",
+      "version": "particle-rain-3.0.5.jar"
+    },
+    {
+      "name": "Particular ✨",
+      "version": "particular-1.1.1+1.21.jar"
+    },
+    {
+      "name": "Pigeon's Poke Pack [1.7.0] - Fang and Claw",
+      "version": "PigeonPack.zip"
+    },
+    {
+      "name": "Pokeblocks",
+      "version": "pokeblocks-1.4.0-1.21.1.jar"
+    },
+    {
+      "name": "Pokemans Pack [Cobblemon]",
+      "version": "pokemans_v14.1_hitboxfix.zip"
+    },
+    {
+      "name": "Presence Footsteps",
+      "version": "PresenceFootsteps-1.11.0+1.21.jar"
+    },
+    {
+      "name": "Prickle",
+      "version": "prickle-fabric-1.21.1-21.1.6.jar"
+    },
+    {
+      "name": "Puzzles Lib",
+      "version": "PuzzlesLib-v21.1.33-1.21.1-Fabric.jar"
+    },
+    {
+      "name": "Reese's Sodium Options",
+      "version": "reeses-sodium-options-fabric-1.8.3+mc1.21.4.jar"
+    },
+    {
+      "name": "Roughly Enough Items",
+      "version": "REI"
+    },
+    {
+      "name": "Satin Free Wakes",
+      "version": "wakes-0.2.2-1.21.jar"
+    },
+    {
+      "name": "Shulker Box Tooltip",
+      "version": "shulkerboxtooltip-fabric-5.1.3+1.21.1.jar"
+    },
+    {
+      "name": "Simple Voice Chat",
+      "version": "voicechat-fabric-1.21.1-2.5.29.jar"
+    },
+    {
+      "name": "SimpleTMs: TMs and TRs for Cobblemon",
+      "version": "SimpleTMs-fabric-2.1.2.jar"
+    },
+    {
+      "name": "Sodium",
+      "version": "sodium-fabric-0.6.13+mc1.21.1.jar"
+    },
+    {
+      "name": "Sodium Extra",
+      "version": "sodium-extra-fabric-0.6.0+mc1.21.1.jar"
+    },
+    {
+      "name": "Sodium Extras",
+      "version": "sodiumextras-fabric-1.0.8-1.21.1.jar"
+    },
+    {
+      "name": "Sodium Leaf Culling",
+      "version": "sodiumleafculling-fabric-1.0.1-1.21.1.jar"
+    },
+    {
+      "name": "Sodium Options API",
+      "version": "sodiumoptionsapi-fabric-1.0.10-1.21.1.jar"
+    },
+    {
+      "name": "Sodium Options Mod Compat",
+      "version": "sodiumoptionsmodcompat-fabric-1.0.0-1.21.1.jar"
+    },
+    {
+      "name": "Sodium Shadowy Path Blocks",
+      "version": "sodium-shadowy-path-blocks-fabric-4.0.0.jar"
+    },
+    {
+      "name": "Sophisticated Backpacks",
+      "version": "Unoffical Fabric port"
+    },
+    {
+      "name": "Sophisticated Core",
+      "version": "Unofficial Fabric port"
+    },
+    {
+      "name": "Sound Physics Remastered",
+      "version": "sound-physics-remastered-fabric-1.21.1-1.4.12.jar"
+    },
+    {
+      "name": "SuperMartijn642's Config Lib",
+      "version": "supermartijn642configlib-1.1.8-fabric-mc1.21.jar"
+    },
+    {
+      "name": "Text Placeholder API",
+      "version": "placeholder-api-2.4.2+1.21.jar"
+    },
+    {
+      "name": "ToolTipFix",
+      "version": "tooltipfix-1.1.1-1.20.jar"
+    },
+    {
+      "name": "Trinkets",
+      "version": "trinkets-3.10.0.jar"
+    },
+    {
+      "name": "TxniLib",
+      "version": "txnilib-fabric-1.0.23-1.21.1.jar"
+    },
+    {
+      "name": "Visuality",
+      "version": "visuality-0.7.7+1.21.jar"
+    },
+    {
+      "name": "Xaero's Minimap",
+      "version": "Xaeros_Minimap_25.2.0_Fabric_1.21.jar"
+    },
+    {
+      "name": "Xaero's World Map",
+      "version": "XaerosWorldMap_1.39.4_Fabric_1.21.jar"
+    },
+    {
+      "name": "YetAnotherConfigLib",
+      "version": "YACL"
+    },
+    {
+      "name": "You Shall Not Spawn!",
+      "version": "YSNS-Fabric_Quilt-MC1.21-1.0.6.jar"
+    },
+    {
+      "name": "Zoomify",
+      "version": "Zoomify-2.14.2+1.21.1.jar"
+    }
+  ],
+  "total": 117,
+  "updated_at": "2025-04-19 15:34:08"
+}
