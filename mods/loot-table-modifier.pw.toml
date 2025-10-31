@@ -1,13 +1,13 @@
 name = "Loot Table Modifier"
-filename = "loot-table-modifier-1.1.1+1.21.4.jar"
+filename = "loot-table-modifier-1.1.2+1.21.5.jar"
 side = "server"
 
 [download]
-url = "https://cdn.modrinth.com/data/emvwKT0u/versions/KhF7pOee/loot-table-modifier-1.1.1%2B1.21.4.jar"
+url = "https://cdn.modrinth.com/data/emvwKT0u/versions/nI8WYEpW/loot-table-modifier-1.1.2%2B1.21.5.jar"
 hash-format = "sha512"
-hash = "32dca8cece991061184173eb7cba8b6150fb600641339a6d4701fbee9a988d2c4ef4e522ae876a9402b4d3a65e6725717420792112105313cfea62ebe24993a9"
+hash = "d2fe5c1fa1dcb7c0e9e3d8d898aef0ce6945359aa90448e4286ee5a2d6a8ae4260e459dfe07725eb51021895aca6d4b4055b32c966e3376e1d2053c968bf3f60"
 
 [update]
 [update.modrinth]
 mod-id = "emvwKT0u"
-version = "KhF7pOee"
+version = "nI8WYEpW"
